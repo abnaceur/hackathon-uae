@@ -91,5 +91,7 @@
                 </div>
             </div>
         </div>
+        <div id="root"></div>
+        <script src="{{asset('js/bundle.js')}}" ></script>
     </body>
 </html>

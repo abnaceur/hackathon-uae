@@ -6,7 +6,7 @@ KHADAMATI AI
 Get the source:
 
 ```bash
-git clone git@git.thecodingmachine.com:si/LoginMachine.git
+git clone https://me-me@bitbucket.org/me-me/hackathon-uae.git
 ```
 
 Edit your `/etc/hosts` file:
@@ -40,7 +40,7 @@ docker exec -ti khadamati-ai_app bash
 ```
 ```bash
 # Install all dependencies.
-php artisan key:generate
+ 
 ```
 
 The in the same root directory
@@ -67,7 +67,7 @@ npm install
 
 ### Connect to the database
 
-Start this link in your browser: phpmyadmin.loginmachine.dev
+Start this link in your browser: phpmyadmin.khadamati-ai.dev
 P.S: Get sure that all your containers are up "docker ps".
 
 ```bash
