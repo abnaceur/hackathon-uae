@@ -1,0 +1,51 @@
+.nav-text {
+    position: relative;
+    top: 10px;
+    font-style: bold;
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+    margin-left: 48px;
+
+}
+
+.ai-1 {
+    color: yellow;
+}
+
+
+.footer-text {
+    color: white;
+    top: 12px;
+    position: relative;
+}
+
+.analytic-btn {
+    margin-right: 10px;
+}
+
+.arrow-left-size {
+    font-size: 35px;
+}
+
+.fix-top {
+    margin-top: 60px;
+}
+
+.sectionform {
+    margin-top: 100px;
+}
+
+row{
+    margin-top:40px;
+    padding: 0 10px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
