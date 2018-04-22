@@ -38,10 +38,15 @@ P.S: The build may take some time don't worry be happy and grab a cup of tea :)
 # Connect to the app container.
 docker exec -ti khadamati-ai_app bash
 ```
+
+Now generate the key
+
 ```bash
-# Install all dependencies.
- 
+php artisan key:generate
+php artisan config:cache
+php artisan config:clear
 ```
+
 
 The in the same root directory
 

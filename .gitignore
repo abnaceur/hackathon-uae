@@ -1,0 +1,5 @@
+vendor/
+public/bundle.js
+.env
+.docker
+.idea
