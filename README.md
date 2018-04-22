@@ -38,27 +38,17 @@ P.S: The build may take some time don't worry be happy and grab a cup of tea :)
 # Connect to the app container.
 docker exec -ti khadamati-ai_app bash
 ```
+```bash
+# Install all dependencies.
+ 
+```
 
 The in the same root directory
 
 ```bash
 # Install all dependencies.
-composer install
+npm install
 ```
-
-
-The in the same root directory
-
-```bash
-# Generate your key.
-php artisan key:generate
-php artisan config:cache
-```
-
-If you have a permission issue remember to :
-```bash
-sudo chmod -R 777 storage
-``` 
 
 Navigate to the app-front-reactjs folder 
 
