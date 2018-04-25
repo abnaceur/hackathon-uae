@@ -15,9 +15,7 @@ class CreateDialectTable extends Migration
     {
         Schema::create('dialect', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('gulf');
-            $table->string('standard');
-            $table->string('algerian');
+            $table->string('dialect');
             $table->timestamps();
         });
     }
