@@ -47,6 +47,15 @@ php artisan config:cache
 php artisan config:clear
 ```
 
+Once the key s generated remember to delete the folder .docker
+and start docker-compose again to init the .env app key varibale
+
+
+```bash
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
+
 Create the tables for the database
 
 ```bash
@@ -86,6 +95,11 @@ Create a symblic link for bundle.js
 ```bash
 ln app-front-reactjs/public/bundle.js public/js/bundle.js
 ```
+
+### Django app 
+
+It is the the app-front-django folder
+the link to access the app is : app.khadamati-ai.dev:8010
 
 ### Connect to the database
 
