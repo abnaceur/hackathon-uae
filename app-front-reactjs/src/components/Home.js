@@ -2,8 +2,45 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import axios from 'axios';
 
 class Home extends Component {
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            dialectOrigin: '',
+            phraseOrigin: '',
+            dialectTarget: '',
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        });
+    }
+
+    handleSubmit(event) {
+        const data = {
+            "params": {
+                dialectOrigin: this.state.dialectOrigin,
+                phraseOrigin: this.state.phraseOrigin,
+                dialectTarget: this.state.dialectTarget,
+            }
+        };
+        console.log(this.state.dialectOrigin);
+        axios.post(`/data/submit`,
+            data).then(res => {
+            console.log(res);
+        });
+    }
 
     render() {
 
@@ -34,12 +71,12 @@ class Home extends Component {
                     <Header/>
                     <div className="container">
                         <div className="sectionform">
-                            <form id="myForm"  encType="multipart/form-data">
+                            <form id="myForm"   onSubmit={this.handleSubmit} encType="multipart/form-data">
                                 <div className="col-md-5">
                                 <div className="form-group row">
                                     <div className="col-md-5">
-                                        <select className="form-control" id="client" name="client"
-                                              required>
+                                        <select className="form-control" id="dialectOrigin" name="dialectOrigin"
+                                                onChange={this.handleChange} required>
                                             <option>Choose a dialect</option>
                                             <option>Gulf dialect</option>
                                             <option>Standard arabic dialect</option>
@@ -49,13 +86,13 @@ class Home extends Component {
                                 </div>
                                 <div className="form-group row">
                                     <div className="col-md-10">
-                                    <textarea name="text-trans"
-                                              className="form-control" rows="5" id="text-trans"
-                                              placeholder="Text-trans"></textarea>
+                                    <textarea name="phraseOrigin" onChange={this.handleChange}
+                                              className="form-control pull-right" rows="5" id="phraseOrigin"
+                                              placeholder="Enter a phrase to translate"></textarea>
                                     </div>
                                 </div>
                                     <button className="analytic-btn btn btn-info" data-toggle="modal" data-target="#exampleModal">Phrase analytics</button>
-                                    <button className="btn btn-primary">Translate</button>
+                                    <button type="submit" className="btn btn-primary">Translate</button>
                                     {modalForPhraseAnalytics}
                                 </div>
 
@@ -67,8 +104,8 @@ class Home extends Component {
                                 <div className="col-md-5">
                                     <div className="form-group row">
                                         <div className="col-md-5">
-                                            <select className="form-control" id="client" name="client"
-                                                    required>
+                                            <select className="form-control" id="dialectTarget" name="dialectTarget"
+                                                    onChange={this.handleChange}  required>
                                                 <option>Choose a dialect</option>
                                                 <option>Gulf dialect</option>
                                                 <option>Standard arabic dialect</option>

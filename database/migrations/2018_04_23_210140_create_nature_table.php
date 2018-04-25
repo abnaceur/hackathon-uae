@@ -15,14 +15,7 @@ class CreateNatureTable extends Migration
     {
         Schema::create('nature', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('verb');
-            $table->string('noun');
-            $table->string('adjective');
-            $table->string('adverb');
-            $table->string('determinative');
-            $table->string('preposition');
-            $table->string('coordinator');
-            $table->string('subordinator');
+            $table->string('nature');
             $table->timestamps();
         });
     }

@@ -47,6 +47,19 @@ php artisan config:cache
 php artisan config:clear
 ```
 
+Create the tables for the database
+
+```bash
+php artisan migrate
+```
+
+Fill the default vlue of the database in nature and dialect tables
+
+```bash
+php artisan db:seed
+```
+
+ 
 
 The in the same root directory
 
@@ -68,7 +81,11 @@ then
 npm install
 ```
 
+Create a symblic link for bundle.js
 
+```bash
+ln app-front-reactjs/public/bundle.js public/js/bundle.js
+```
 
 ### Connect to the database
 
