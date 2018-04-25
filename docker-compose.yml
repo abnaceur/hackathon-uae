@@ -44,9 +44,10 @@ services:
 
   postgres:
     image: postgres
+    
   django:
-    build: app-front-django/
-    command: python3 app-front-django/manage.py runserver 0.0.0.0:8010
+    build: app-front-django/sent_app
+    command: python3 app-front-django/sent_app/manage.py runserver 0.0.0.0:8010
     volumes:
       - .:/code
     ports:
