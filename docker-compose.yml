@@ -41,3 +41,15 @@ services:
       PMA_HOST: mysql
       VIRTUAL_HOST: phpmyadmin.khadamati-ai.dev   
     container_name: khadamati-ai_phpmyadmin
+
+  postgres:
+    image: postgres
+  django:
+    build: app-front-django/
+    command: python3 app-front-django/manage.py runserver 0.0.0.0:8010
+    volumes:
+      - .:/code
+    ports:
+      - "8010:8010"
+    depends_on:
+      - postgres
