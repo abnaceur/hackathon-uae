@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 //Methods
 Route::post('/data/submit', 'TranslatorController@store');
+Route::post('/translate', 'TranslatorController@definition');
