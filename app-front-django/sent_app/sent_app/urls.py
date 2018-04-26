@@ -27,7 +27,7 @@ urlpatterns = [
 	path('debug_dict/', cdv.debug_dict),
 	path('home/', cdv.home),
 	path('translator/', cdv.translator),
-	path('captcha/', captv.index),
+	path('captcha/index/', captv.index),
 	path('captcha/success/', captv.success),
 	path('captcha/login/', captv.login),
 	path('captcha/captcha/', captv.captcha),

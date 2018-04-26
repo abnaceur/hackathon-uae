@@ -25,7 +25,7 @@ SECRET_KEY = '_*s)s$vpv=@-59dx1dd@j=0fo7%lb0_6m(6is=1zop^j6ri&2y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['app.khadamati-ai.dev']
+ALLOWED_HOSTS = ['app.khadamati-ai.dev', '0.0.0.0']
 
 
 # Application definition
