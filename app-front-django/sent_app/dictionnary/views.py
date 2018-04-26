@@ -1,7 +1,10 @@
+# django import
 from django.shortcuts import render
-
 from django.http import HttpResponse
 from django import template
+from  dictionnary.models import Word
+
+# stdlib import
 import os
 
 # Create your views here.
@@ -17,4 +20,10 @@ def project(request):
 
 def dictionnary(request):
 	return (render(request, "dictionnary/project.html", locals()))
+
+def display_dialect(request):
+	if request.method == "POST":
+		words = Word.objects.all()
+	return render(request, "dictionnary/display_dialect.html/", locals())
+		
 

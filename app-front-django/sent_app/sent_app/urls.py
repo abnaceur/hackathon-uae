@@ -28,6 +28,7 @@ urlpatterns = [
 	path('home/', cdv.home),
 	path('dictionnary/', cdv.dictionnary),
 	path("project/", cdv.project),
+	path('display_dialect/', cdv.display_dialect),
 	path('captcha/index/', captv.index),
 	path('captcha/success/', captv.success),
 	path('captcha/login/', captv.login),

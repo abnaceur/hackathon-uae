@@ -27,15 +27,6 @@ def captcha(request):
 	if request.method == "POST":
 		loginForm = LoginForm(request.POST)
 		set_session(request)
-		"""
-		name = request.POST.get("inputName")
-		email = request.POST.get("inputEmail")
-		password = request.POST.get("inputPassword")
-		address = request.POST.get("address1")
-		adress2 = request.POST.get("address2")
-		city = request.POST.get("city")
-		dialect = request.POST.get("dialect")
-		"""
 	phrases = Phrase.objects.all()
 	if request.session.has_key("inputName"):
 		name = request.session["inputName"]
