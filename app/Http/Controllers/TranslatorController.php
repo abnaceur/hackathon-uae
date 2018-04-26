@@ -30,6 +30,41 @@ class TranslatorController extends Controller
 
 
 
+
+    /**
+     * Find the definition of the word
+     * @param  \Illuminate\Http\Request  $request
+     * @return string
+     */
+
+    public function definition(Request $request) {
+
+        $word_id = DB::table('all_words')
+            ->select('id')
+            ->where([
+                ['word', '=', $request['params']['word']],
+            ])
+            ->get();
+
+        $id = 0;
+        foreach ($word_id as $key) {
+            $id = $key->id;
+        }
+
+        $wordDefintion = DB::table('definition')
+            ->select('definition')
+            ->where([
+                ['word_id', '=', $id],
+            ])
+            ->get();
+
+        return $wordDefintion;
+
+    }
+
+
+
+
     /**
      * Define the index of the dialect.
      * @param  \Illuminate\Http\Request  $request
@@ -143,6 +178,7 @@ class TranslatorController extends Controller
 
         }
 
+        $object = json_decode(json_encode($allWords), FALSE);
 
         return $allWords;
 
