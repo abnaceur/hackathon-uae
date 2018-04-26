@@ -6,6 +6,7 @@ class Word(models.Model):
 	word = models.CharField(max_length = 200)
 	dialect = models.CharField(max_length = 50)
 	key = models.IntegerField()
+	translated = models.BooleanField()
 
 	def publish(self):
 		self.published_date = timezone.now()

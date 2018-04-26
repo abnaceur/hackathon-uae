@@ -24,15 +24,25 @@
 		  </div>
 		</nav>
 
+{{ dialect}}
+{{ post }}
 		<div class="container">
-			<form class="form-signin" method="post" action="#">{% csrf_token %}
+			<div style="display: inline-block:">
+				<h4 style="width: 12%;">{{ from }}</h4>
+				<h4 style="width: 12%;">{{ from }}</h4>
+			</div>
 				{% for word in words %}
-					<div class="display: inline-block; vertical-align: middle;">
-						<label for="inputName">{{word}}</label>
-						<input type="name" id="inputName" placeholder="Name" required autofocus name="inputName">
-					</div>
+					{% if word.translated == False %}
+					{{ word.translated }}
+						<form class="form-signin" method="post" action="/display_dialect/">{% csrf_token %}
+							<div>
+								<label for="inputName" style="width: 12%; margin-bottom: 2%;">{{word.id}} {{word}}</label>
+								<input type="name" id="inputName" placeholder="Name" required autofocus name="{{word.id}}">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</form>
+					{% endif %}
 				{% endfor %}
-			</form>
 		</div>
 
 	</body>
