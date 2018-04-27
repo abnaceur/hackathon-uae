@@ -37,7 +37,7 @@
 						<form class="form-signin" method="post" action="/display_dialect/">{% csrf_token %}
 							<div>
 								<label for="inputName" style="width: 12%; margin-bottom: 2%;">{{word.key}} {{word}}</label>
-								<input type="name" id="inputName" placeholder="Name" required autofocus name="{{word.id}}">
+								<input type="name" id="inputName" placeholder="Name" required autofocus name="{{word.key}}">
 								<button type="submit" class="btn btn-primary">Submit</button>
 							</div>
 						</form>
