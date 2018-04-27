@@ -1,0 +1,207 @@
+1	I 	آنَا 	ʾānā
+2 	you (singular) 	اِنْتِ 	ʾinti
+3 	he 	هُوَّ 	huwwa
+4 	we 	اَحْنَا 	ʾaḥnā
+5 	you (plural) 	اِنْتُومَا 	ʾintūmā
+6 	they 	هُومَا 	hūmā
+7 	this 	هَاذَا 	hāḏā
+8 	that 	هَاذَاكَ 	hāḏāka
+9 	here 	هُونِي, هْنَا 	hūnī, hnā
+10 	there 	غَادِي 	ġādī
+11 	who 	شْكُونْ 	škūn
+12 	what 	شْنُوَّ 	šnuwwa
+13 	where 	وِينْ, فِينْ 	wīn, fīn
+14 	when 	وَقْتَاشْ 	waqtāš
+15 	how 	كِيفَاشْ 	kīfāš
+16 	not 	مُوشْ 	mūš
+17 	all 	اِلْكُلْ 	ʾilkul
+18 	many 	بَرْشَ 	barša
+19 	some 	شْوَيَّ, بَعْضْ 	šwayya, baʿḍ
+20 	few 	شْوَيَّ, بَعْضْ 	šwayya, baʿḍ
+21 	other 	آخِرْ 	ʾāḫir
+22 	one 	وَاحِدْ 	wāḥid
+23 	two 	ثْنِينْ, زوْز 	zūz, ṯnīn
+24 	three 	ثْلَاثَة 	ṯlāṯa
+25 	four 	اَرْبْعَة 	ʾarbʿa
+26 	five 	خَمْسَة 	ḫamsa
+27 	big 	كْبِيرْ 	kbīr
+28 	long 	طْوِيلْ 	ṭwīl
+29 	wide 	وَاسِعْ 	wāsiʿ
+30 	thick 	خْشِينْ 	ḫšīn
+31 	heavy 	ثْقِيلْ 	ṯqīl
+32 	small 	صْغِيرْ 	ṣġīr
+33 	short 	قْصِيرْ 	qṣīr
+34 	narrow 	ضِيِّقْ 	ḍiyyiq
+35 	thin 	رْقِيقْ 	rqīq
+36 	woman 	مْرَة 	mra
+37 	man (adult male) 	رَاجِلْ 	rājil
+38 	man (human being) 	بْنَادِمْ 	bnādim
+39 	child 	فزغول 	fazġūl
+40 	wife 	مْرَة 	mra
+41 	husband 	رَاجِلْ 	rājil
+42 	mother 	اُمْ 	ʾum
+43 	father 	بُو 	bū
+44 	animal 	حَيَوَانْ 	ḥayawān
+45 	fish 	حُوتَة 	ḥūta
+46 	bird 	عَصْفُورْ 	ʿaṣfūr
+47 	dog 	كَلْبْ 	kalb
+48 	louse 	قَمْلَة 	qamla
+49 	snake 	حْنَشْ 	ḥnaš
+50 	worm 	دُودَة 	dūda
+51 	tree 	شُجْرَة 	šujra
+52 	forest 	غَابَة 	ġāba
+53 	stick 	عْصَا 	ʿṣā
+54 	fruit 	غَلَّة 	ġalla
+55 	seed 	زُرِّيعَة 	zurrīʿa
+56 	leaf 	وَرْقَة 	warqa
+57 	root 	عِرْقْ 	ʿirq
+58 	bark (of a tree) 	قِشْرَة 	qišra
+59 	flower 	نَوَّارَة 	nawwāra
+60 	grass 	حْشِيشْ 	ḥšīš
+61 	rope 	حْبَلْ 	ḥbal
+62 	skin 	جِلْدَة 	jilda
+63 	meat 	لْحَمْ 	lḥam
+64 	blood 	دَمْ 	dam
+65 	bone 	عْظَمْ 	ʿđ̣am
+66 	fat (noun) 	شْحَمْ 	šḥam
+67 	egg 	عَظْمَة 	ʿađ̣ma
+68 	horn 	ڤَرْنْ 	garn
+69 	tail 	بَعْبُوصْ 	baʿbūṣ
+70 	feather 	رِيشَة 	rīša
+71 	hair 	شْعَرْ 	šʿar
+72 	head 	رَاسْ 	rās
+73 	ear 	وْذِنْ 	wḏin
+74 	eye 	عِينْ 	ʿīn
+75 	nose 	خْشَمْ 	ḫšam
+76 	mouth 	جَلْغَة 	jalġa
+77 	tooth 	سِنَّة 	sinna
+78 	tongue (organ) 	لْسَانْ 	lsān
+79 	fingernail 	ظْفَرْ 	đ̣far
+80 	foot 	سَاقْ 	sāq
+81 	leg 	رْجِلْ 	rjil
+82 	knee 	رُكْبَة 	rukba
+83 	hand 	يِدْ 	yid
+84 	wing 	جْنَاحْ 	jnāḥ
+85 	belly 	كِرْشْ 	kirš
+86 	guts 	بْزيز 	bzīz
+87 	neck 	كرومَة 	krūma
+88 	back 	ظْهَرْ 	đ̣har
+89 	breast 	بَزّولة 	bazzūla
+90 	heart 	قَلْبْ 	qalb
+91 	liver 	كِبْدَة 	kibda
+92 	to drink 	شْرَبْ 	šrab
+93 	to eat 	كْلَا 	klā
+94 	to bite 	ڤْدِمْ 	gdim
+95 	to suck 	رْضَعْ 	rḍaʿ
+96 	to spit 	بْزَقْ 	bzaq
+97 	to vomit 	رَدْ 	rad
+98 	to blow 	نْفَخْ 	nfaḫ
+99 	to breathe 	تْنَفِّسْ 	tnaffis
+100 	to laugh 	ضْحَكْ 	ḍḥak
+101 	to see 	را 	rā
+102 	to hear 	سْمَعْ 	smaʿ
+103 	to know 	عْرَفْ 	ʿraf
+104 	to think 	خَمِّمْ 	ḫammim
+105 	to smell 	شَمْ 	šam
+106 	to fear 	خَافْ 	ḫāf
+107 	to sleep 	رْقَدْ 	rqad
+108 	to live 	عَاشْ 	ʿāš
+109 	to die 	مَاتْ 	māt
+110 	to kill 	قْتَلْ 	qtal
+111 	to fight 	تْعَارِكْ 	tʿārik
+112 	to hunt 	اِصْطَادْ 	ʾiṣṭād
+113 	to hit 	ضْرَبْ 	ḍrab
+114 	to cut 	قَصْ 	qaṣ
+115 	to split 	قْسَمْ 	qsam
+116 	to stab 	دْغَرْ 	dġar
+117 	to scratch 	حَكْ 	ḥak
+118 	to dig 	حْفَرْ 	ḥfar
+119 	to swim 	عاَمْ 	ʿām
+120 	to fly 	طار 	ṭār
+121 	to walk 	مْشَا 	mšā
+122 	to come 	جَا 	jā
+123 	to lie (as in a bed) 	تْمَدْ 	tmad
+124 	to sit 	قَعمِز 	ga'miz
+125 	to stand 	وْقِفْ 	wqif
+126 	to turn (intransitive) 	دَارْ 	dār
+127 	to fall 	طَاحْ 	ṭāḥ
+128 	to give 	عْطَا 	aʿṭā
+129 	to hold 	شَدْ 	šad
+130 	to squeeze 	عْصَرْ 	ʿṣar
+131 	to rub 	حَكْ 	ḥak
+132 	to wash 	غْسَلْ 	ġsal
+133 	to wipe 	مْسَحْ 	msaḥ
+134 	to pull 	جْبِدْ 	jbid
+135 	to push 	دَزْ 	daz
+136 	to throw 	رْمَا 	rmā
+137 	to tie 	رْبَطْ 	rbaṭ
+138 	to sew 	خَيِّطْ 	ḫayyiṭ
+139 	to count 	حْسِبْ 	ḥsib
+140 	to say 	قَالْ 	qāl
+141 	to sing 	غَنَّا 	ġannā
+142 	to play 	لْعَبْ 	lʿab
+143 	to float 	عَامْ 	ʿām
+144 	to flow 	جْرَا 	jrā
+145 	to freeze 	جْمِدْ 	jmid
+146 	to swell 	تِنْفَخْ 	tinfaḫ
+147 	sun 	سمش 	samš
+148 	moon 	ڤَمْرَة 	gamra
+149 	star 	نِجْمَة 	nijma
+150 	water 	مَا 	mā
+151 	rain 	شْتَا 	štā
+152 	river 	وَادْ 	wād
+153 	lake 	سَبْخَة 	sabḫa
+154 	sea 	بْحَرْ 	bḥar
+155 	salt 	مِلْحْ 	milḥ
+156 	stone 	حَجْرَة 	ḥajra
+157 	sand 	رْمَلْ 	rmal
+158 	dust 	غَبْرَة 	ġabra
+159 	earth 	تْرَابْ 	trāb
+160 	cloud 	سْحَابْ 	sḥāb
+161 	fog 	ضْبَابْ 	ḍbāb
+162 	sky 	سْمَا 	smā
+163 	wind 	رِيحْ 	rīḥ
+164 	snow 	ثِلْجْ 	ṯilj
+165 	ice 	ثِلْجْ 	ṯilj
+166 	smoke 	دُخّانْ 	duḫḫān
+167 	fire 	نَارْ 	nār
+168 	ash 	رْمَادْ 	rmād
+169 	to burn 	حْرَقْ 	ḥraq
+170 	road 	كَيَّاسْ 	kayyās
+171 	mountain 	جْبَلْ 	jbal
+172 	red 	اَحْمَرْ 	ʾaḥmar
+173 	green 	اَخْضِرْ 	ʾaḫḍir
+174 	yellow 	اَصْفِرْ 	ʾaṣfir
+175 	white 	اَبْيِضْ 	ʾabyiḍ
+176 	black 	اَكْحِلْ 	ʾakḥil
+177 	night 	لِيلْ 	līl
+178 	day 	نْهَارْ 	nhār
+179 	year 	عَامْ 	ʿām
+180 	warm 	دَافِي 	dāfī
+181 	cold 	بَارِدْ 	bārid
+182 	full 	مْعِبِّي 	mʿibbī
+183 	new 	جْدِيدْ 	jdīd
+184 	old 	قْدِيمْ 	qdīm
+185 	good 	بَاهِي 	bāhī
+186 	bad 	خَايِبْ 	ḫāyib
+187 	rotten 	خامج 	ḫāmij
+188 	dirty 	مَّسِّخْ 	mmassiḫ
+189 	straight 	طُولْ 	ṭūl
+190 	round 	مْدَوِّرْ 	mdawwir
+191 	sharp (as a knife) 	مَاضِي 	māḍī
+192 	dull (as a knife) 	حَافِي 	ḥāfī
+193 	smooth 	اَرْطِبْ 	ʾarṭib
+194 	wet 	مَبْلُولْ 	mablūl
+195 	dry 	شَايَحْ 	šāyaḥ
+196 	correct 	صْحِيحْ 	ṣḥīḥ
+197 	near 	قْرِيبْ 	qrīb
+198 	far 	بْعِيدْ 	bʿīd
+199 	right 	لِيمِينْ 	līmīn
+200 	left 	لِيسَارْ 	līsār
+201 	at 	عَنْدْ 	ʿand
+202 	in 	فِي 	fī
+203 	with 	مْعَا 	mʿā
+204 	and 	و 	ū
+205 	if 	اِذَا 	ʾiḏā
+206 	because 	عْلَى خَاطِرْ 	ʾlā ḫāṭir
+207 	name 	اِسْمْ 	ʾism
