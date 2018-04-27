@@ -8,7 +8,7 @@ from  dictionnary.models import Word
 import os
 
 def set_session(request):
-	if not request.session['fromDialect']:
+	if request.POST.get("fromDialect"):
 		request.session['fromDialect'] = request.POST.get("fromDialect")
 
 # Create your views here.
@@ -33,7 +33,7 @@ def display_dialect(request):
 		words = Word.objects.filter(dialect=request.session['fromDialect']).all()
 		keys = request.POST.keys();
 		for w in words:
-			if str(w.id) in keys:
+			if str(w.key) in keys:
 				setattr(w, 'translated', True)
 				w.save()
 	return render(request, "dictionnary/display_dialect.html/", locals())
