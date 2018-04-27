@@ -5,7 +5,7 @@ from django.utils import timezone
 class Word(models.Model):
 	word = models.CharField(max_length = 200)
 	dialect = models.CharField(max_length = 50)
-	key = models.IntegerField()
+	key = models.IntegerField(unique = True)
 	translated = models.BooleanField(default=False)
 
 	def publish(self):

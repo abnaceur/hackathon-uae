@@ -34,6 +34,7 @@ def display_dialect(request):
 		keys = request.POST.keys();
 		for w in words:
 			if str(w.key) in keys:
-				setattr(w, 'translated', True)
+#setattr(w, 'translated', True)
+				w.translated = False
 				w.save()
 	return render(request, "dictionnary/display_dialect.html/", locals())
