@@ -4,9 +4,11 @@ from django.http import HttpResponse
 from django import template
 from captcha.forms import LoginForm
 from captcha.models import Phrase
+from sent_app.settings import BASE_DIR, STATICFILES_DIR, STATIC_URL
 
 #python imports
 import random
+import os
 
 def set_session(request):
 	request.session['inputName'] = request.POST.get("inputName")
@@ -18,6 +20,8 @@ def set_session(request):
 
 # Create your views here.
 def index(request):
+#amazon_fichiers = os.path.join(BASE_DIR, "templates/captcha/amazon_fichiers/")
+	amazon_fichier = os.path.join(STATIC_URL, "amazon_fichiers/")
 	return render(request, "captcha/amazon.html", locals())
 
 def login(request):
