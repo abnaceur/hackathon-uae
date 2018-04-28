@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import Header from './Header';
+import Header from '../admin/Header';
+import Sidebar from '../admin/SideBar';
+
 import Footer from './Footer';
 import axios from 'axios';
 
@@ -132,18 +134,13 @@ class Home extends Component {
         return (
             <div>
                 <Header/>
-
-
-
-
-
+                <Sidebar/>
                 <div className="container">
                     <div className="sectionform">
-                        <form id="myForm" onSubmit={this.handleSubmit} encType="multipart/form-data">
                             <div className="col-md-5">
                                 <div className="form-group row">
                                     <div className="col-md-5">
-                                        <select className="form-control" id="dialectOrigin" name="dialectOrigin"
+                                        <select className="form-control" id="dialectOrigin" key="dialectOrigin" name="dialectOrigin"
                                                 onChange={this.handleChange} required>
                                             <option>Choose a dialect</option>
                                             <option>Gulf dialect</option>
@@ -155,7 +152,7 @@ class Home extends Component {
                                 <div className="form-group row">
                                     <div className="col-md-10">
                                         <div id="fields">
-                                    <textarea id="textarea" name="phraseOrigin" onChange={this.handleChange} style={StyleOrigin}
+                                    <textarea id="textarea" key="textarea" name="phraseOrigin" onChange={this.handleChange} style={StyleOrigin}
                                               className="form-control pull-right" rows="5"
                                               placeholder={labelOrigin}></textarea>
                                         </div>
@@ -165,7 +162,7 @@ class Home extends Component {
                                         data-target="#exampleModal">Phrase
                                     analytics
                                 </button>
-                                <button type="submit" className="btn btn-primary">Translate</button>
+                                <button onClick={this.handleSubmit} className="btn btn-primary">Translate</button>
                                 {modalForPhraseAnalytics}
                             </div>
 
@@ -194,7 +191,6 @@ class Home extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>
                 <div className="container fix-top">
