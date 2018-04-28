@@ -14,7 +14,7 @@ services:
     volumes:
       - ./:/var/www/html:rw
     environment:
-      - VIRTUAL_HOST=app.khadamati-ai.dev
+      - VIRTUAL_HOST=app.khadamati-ai.local
       - PHP_INI_ERROR_REPORTING=E_ALL & ~E_USER_DEPRECATED
       - PHP_EXTENSION_XDEBUG=1
     env_file:
@@ -39,7 +39,7 @@ services:
       - .env
     environment:
       PMA_HOST: mysql
-      VIRTUAL_HOST: phpmyadmin.khadamati-ai.dev
+      VIRTUAL_HOST: phpmyadmin.khadamati-ai.local
     container_name: khadamati-ai_phpmyadmin
 
   postgres:
@@ -53,7 +53,7 @@ services:
     ports:
           -  8010:8010
     environment:
-      VIRTUAL_HOST: django.khadamati-ai.dev
+      VIRTUAL_HOST: django.khadamati-ai.local
 
     depends_on:
       - postgres

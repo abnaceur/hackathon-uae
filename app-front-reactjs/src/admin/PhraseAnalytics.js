@@ -35,7 +35,7 @@ class PhraseAnalytics extends React.Component {
 
         console.log('testing', data['params']['phrase']);
 
-        axios.get(`http://django.khadamati-ai.dev/analysis?string=` + data['params']['phrase'],
+        axios.get(`http://django.khadamati-ai.local/analysis?string=` + data['params']['phrase'],
             {headers: {
                     'Access-Control-Allow-Origin': '*',
                 },

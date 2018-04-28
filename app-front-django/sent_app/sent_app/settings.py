@@ -54,16 +54,16 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ALLOWED_HOSTS = ['app.khadamati-ai.dev', '0.0.0.0', 'django.khadamati-ai.dev']
+ALLOWED_HOSTS = ['app.khadamati-ai.local', '0.0.0.0', 'django.khadamati-ai.local']
 
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ORIGIN_WHITELIST = (
     "0.0.0.0",
-    "app.khadamati-ai.dev/#/phraseAnalytics",
-    'http://django.khadamati-ai.dev/analysis?string=sssss'
-    "app-khadamati-ai.dev",
-    "django.khadamati-ai.dev"
+    "app.khadamati-ai.local/#/phraseAnalytics",
+    'http://django.khadamati-ai.local/analysis?string=sssss'
+    "app-khadamati-ai.local",
+    "django.khadamati-ai.local"
 )
 
 CORS_ALLOW_HEADERS = (
