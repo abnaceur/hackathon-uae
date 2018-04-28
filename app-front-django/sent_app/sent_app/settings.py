@@ -25,9 +25,6 @@ SECRET_KEY = '_*s)s$vpv=@-59dx1dd@j=0fo7%lb0_6m(6is=1zop^j6ri&2y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['app.khadamati-ai.dev', '0.0.0.0']
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,12 +34,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
 	'analysis',
 	'dictionnary',
 	'captcha',
 ]
 
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.BrokenLinkEmailsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,6 +53,41 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+ALLOWED_HOSTS = ['app.khadamati-ai.dev', '0.0.0.0', 'django.khadamati-ai.dev']
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_WHITELIST = (
+    "0.0.0.0",
+    "app.khadamati-ai.dev/#/phraseAnalytics",
+    'http://django.khadamati-ai.dev/analysis?string=sssss'
+    "app-khadamati-ai.dev",
+    "django.khadamati-ai.dev"
+)
+
+CORS_ALLOW_HEADERS = (
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+)
+
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
+
+
 
 ROOT_URLCONF = 'sent_app.urls'
 

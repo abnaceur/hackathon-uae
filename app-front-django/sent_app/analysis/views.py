@@ -13,11 +13,10 @@ def debug(request):
 	return HttpResponse("<h1>%s</h1>" % os.getcwd())
 
 def analysis(request):
-	if request.method == 'GET':
-		string = request.GET['string']
-	else:
-		return
-	string = sent.main(string)
-	return (HttpResponse("<h1>%s</h1>" % string))
+    string = request.GET['string']
+    if string:
+        string = sent.main(string)
+        return (HttpResponse(string))
+    return HttpResponse("NON")
 
 # Create your views here.

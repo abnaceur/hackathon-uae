@@ -39,7 +39,7 @@ services:
       - .env
     environment:
       PMA_HOST: mysql
-      VIRTUAL_HOST: phpmyadmin.khadamati-ai.dev   
+      VIRTUAL_HOST: phpmyadmin.khadamati-ai.dev
     container_name: khadamati-ai_phpmyadmin
 
   postgres:
@@ -51,6 +51,9 @@ services:
     volumes:
       - .:/code
     ports:
-      - "8010:8010"
+          -  8010:8010
+    environment:
+      VIRTUAL_HOST: django.khadamati-ai.dev
+
     depends_on:
       - postgres
