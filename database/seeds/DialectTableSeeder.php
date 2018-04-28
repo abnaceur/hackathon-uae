@@ -33,5 +33,20 @@ class DialectTableSeeder extends Seeder
             'created_at' => Carbon::today(),
             'updated_at' => Carbon::today(),
         ]);
+
+        DB::table('dialect')->insert([
+            'id' => 4,
+            'dialect' => 'saudi',
+            'created_at' => Carbon::today(),
+            'updated_at' => Carbon::today(),
+        ]);
+
+
+        DB::table('dialect')->insert([
+            'id' => 5,
+            'dialect' => 'egyptian',
+            'created_at' => Carbon::today(),
+            'updated_at' => Carbon::today(),
+        ]);
     }
 }

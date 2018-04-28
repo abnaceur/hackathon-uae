@@ -49,3 +49,19 @@ row{
     margin-top: -20px;
     font-size: 15px;
 }
+
+.skin-blue .main-header .navbar {
+    top: -15px;
+}
+
+.skin-blue .main-header .logo {
+    position: relative;
+}
+
+.dash-1 {
+    font-size: 22px;
+    position: relative;
+    left: -22px;
+    top: 7px;
+    color: white;
+}

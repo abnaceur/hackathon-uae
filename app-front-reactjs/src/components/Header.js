@@ -9,11 +9,22 @@ class Header extends React.Component {
     }
 
     render() {
+        let myStyle = {
+            float:'right'
+        };
+
         return (
             <nav className="navbar navbar-inverse">
                 <div className="navbar-header">
                     <b className="nav-text">KHADAMATI</b> <i className="ai-1">AI</i>
                 </div>
+                <ul>
+                    <li style={myStyle}>
+                        <Link to="/dashboard">
+                            <button className="btn btn-custom2 btn-info dash-1">Dashboard</button>
+                        </Link>
+                    </li>
+                </ul>
             </nav>
         );
     }
