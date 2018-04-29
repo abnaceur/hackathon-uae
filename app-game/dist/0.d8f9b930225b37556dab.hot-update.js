@@ -1,0 +1,10 @@
+webpackHotUpdate(0,{
+
+/***/ 347:
+/***/ (function(module, exports, __webpack_require__) {
+
+	eval("/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(78), RootInstanceProvider = __webpack_require__(86), ReactMount = __webpack_require__(88), React = __webpack_require__(140); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {\n\n'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nvar modes = exports.modes = [{\n    name: 'Cheat',\n    numberRange: 1,\n    multiplier: 1\n}, {\n    name: 'Easy',\n    numberRange: 1,\n    multiplier: 1\n}, {\n    name: 'Intermediate',\n    numberRange: 100,\n    multiplier: 1\n}, {\n    name: 'Hard',\n    numberRange: 1000,\n    multiplier: 1\n}, {\n    name: 'Extreme',\n    numberRange: 10000,\n    multiplier: 1\n}];\n\n// Set the default mode to easy\nvar defaultMode = exports.defaultMode = modes[1];\n\nexports.default = modes;\n\n/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(247); if (makeExportsHot(module, __webpack_require__(140))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error(\"Cannot apply hot update to \" + \"modes.js\" + \": \" + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./assets/scripts/src/config/modes.js\n// module id = 347\n// module chunks = 0\n//# sourceURL=webpack:///./assets/scripts/src/config/modes.js?");
+
+/***/ })
+
+})

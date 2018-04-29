@@ -14,39 +14,6 @@ class Dashboard extends React.Component {
         this.handleStyle = this.handleStyle.bind(this);
     }
 
-        componentWillMount () {
-
-
-                let data = JSON.stringify({
-                    password: "c",
-                    username: "c"
-                });
-
-                let tc = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:uaem="http://schemas.datacontract.org/2004/07/UAEMGovData">\n' +
-                    '   <soapenv:Header/>\n' +
-                    '   <soapenv:Body>\n' +
-                    '      <tem:Index>\n' +
-                    '         <!--Optional:-->\n' +
-                    '         <tem:input>\n' +
-                    '           \n' +
-                    '            <uaem:password>24@domain.com</uaem:password>\n' +
-                    '            <!--Optional:-->\n' +
-                    '            <uaem:username>doamin@24</uaem:username>\n' +
-                    '         \n' +
-                    '         </tem:input>\n' +
-                    '      </tem:Index>\n' +
-                    '   </soapenv:Body>\n' +
-                    '</soapenv:Envelope>';
-
-                axios.post('http://213.132.58.37/Entities.svc/Entities', tc, {
-                        headers: {
-                            'Content-Type': 'application/json',
-                        }
-                    }
-                )
-
-        }
-
     handleStyle (value) {
 
         let style = {

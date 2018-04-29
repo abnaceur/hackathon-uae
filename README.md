@@ -12,8 +12,9 @@ git clone https://me-me@bitbucket.org/me-me/hackathon-uae.git
 Edit your `/etc/hosts` file:
 
 ```
-127.0.0.1   app.khadamati-ai.dev
-127.0.0.1   phpmyadmin.khadamati-ai.dev 
+127.0.0.1   app.khadamati-ai.local
+127.0.0.1   django.khadamati-ai.local
+127.0.0.1   phpmyadmin.khadamati-ai.local 
 ```
 
 Build the environment:
@@ -39,7 +40,14 @@ P.S: The build may take some time don't worry be happy and grab a cup of tea :)
 docker exec -ti khadamati-ai_app bash
 ```
 
-Now generate the key
+Install all dependencies by composer inside khadamati-ai_app container
+
+
+```bash
+composer install
+```
+
+Now generate the key inside the container.
 
 ```bash
 php artisan key:generate
@@ -47,30 +55,38 @@ php artisan config:cache
 php artisan config:clear
 ```
 
-Once the key s generated remember to delete the folder .docker
+Once the key is generated remember to delete the folder .docker
 and start docker-compose again to init the .env app key varibale
 
 
 ```bash
+sudo rm -rf .docker
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
+docker-compose up --build -d
 ```
 
-Create the tables for the database
+Note : the option '-d' is for silent mode 
+
+Create the tables for the database in the khadamati-ai_app container
 
 ```bash
 php artisan migrate
 ```
 
-Fill the default vlue of the database in nature and dialect tables
+Connect to phpmyadmin on http://phpmyadmin.khadamati-ai.local/ 
+and create the database named 'khadamati-ai'
+
+
+Fill the default values of the database tables in nature, dialect and all_words tables
 
 ```bash
-php artisan db:seed
+php artisan db:seed --class=NatureTableSeeder
+php artisan db:seed --class=DialectTableSeeder
+php artisan db:seed --class=AllwordsTableSeeder
 ```
 
- 
-
-The in the same root directory
+ in the same root directory
 
 ```bash
 # Install all dependencies.
