@@ -1,6 +1,75 @@
 KHADAMATI AI
 =========================
 
+
+## Description of the project :
+
+#### UAE - 42 hackathon 
+
+A proactive government needs to pay attention to citizens’ feedback, both active and passive, and hear citizens’ complaints to governments through official channels (e.g., websites, call centres) and on social media. However, a detailed quantitative analysis around this would require a set of relevant keywords to be available in the local languages. 
+Given the diversity of dialects in Arabic prevalent in different countries/regions, this becomes a challenging exercise.
+Useful Statistics:
+
+of federal government services ~3000
+of federal government entities ~40
+of federal government website/applications ~100
+Target audience ~9 million (UAE population)
+of Arabic speakers worldwide ~ 420 million
+of Arabic dialects ~50+
+
+Data Source: Government service catalogue (called Khadamati)
+
+This will provide data on all federal government service requirements (fees, documents needed etc.)
+Data sets will be provided through APIs
+Objective: Build an enabler for AI engines to have a better understanding of Arabic language and its sentiments.
+
+
+## Team 
+ - abnaceur [Doeremon]
+ - mschmitt [توفيق]
+ - acalleja [Tacos]
+
+## Project's Goals and objectives
+
+Create a platform for government employees to handle input from all arabic speaking
+users.
+
+The sentiment analyser notify them for any negative feedback. They can then translate it
+using our translator, from any dialect to their, so that they can always adapt to users'
+needs.
+
+The biggest difficulty is the harvest of data to improve the platform. This is done by
+using three different features:
+
+the captcha system offers users to evaluate the feelings expressed by a sentence in 
+their dialect. This data will be re-injected in the sentiment analyser to make better
+predictions.
+
+The collaborative dictionary targets scholars, so that we can translate the most 
+uncommon and subtle words of every dialect.
+
+A game application, that let users learn english. English is used as a binding language
+between the different dialects. This will be used to translate the most common words
+of every dialect.
+
+
+Provided solution : 
+    - A translator between all arabic dialects.
+    - Sentiments Analytics for any arabic dialect.
+    - A collaborative dictionnary.
+    - A captcha system.
+    - A game sample.
+
+## Technologies :
+ - Laravel 5 framework.
+ - ReactJs.
+ - Django 2.0.4 framework.
+ - Docker 17.05.0.
+ - Webpack.
+ - Mysql.
+ - Sqlite.
+ - Bootstrap 4
+ 
 ## Install the development environment
 
 Get the source:
