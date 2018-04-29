@@ -164,7 +164,7 @@ npm install
 
 Navigate to the app-front-reactjs folder 
 
-```bash.
+```bash
 cd app-front-reactjs
 ```
 
@@ -184,7 +184,7 @@ ln app-front-reactjs/public/bundle.js public/js/bundle.js
 ### Django app 
 
 It is the the app-front-django folder
-the link to access the app is : app.khadamati-ai.dev:8010
+the link to access the app is : app.khadamati-ai.local:8010
 
 ### Connect to the database
 
