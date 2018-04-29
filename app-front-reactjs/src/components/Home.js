@@ -107,30 +107,6 @@ class Home extends Component {
         }
 
 
-        const modalForPhraseAnalytics = <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog" role="document">
-                <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Phrase analytics :</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div className="modal-body">
-                        <b>Phrase :</b><br></br>
-                        <p>this is a phrase</p><br></br>
-                        <b>Review : </b><br></br>
-                        <p>This is the review.</p>
-                    </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                    </div>
-                </div>
-            </div>
-        </div>;
-
-
         return (
             <div>
                 <Header/>
@@ -158,12 +134,7 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <button className="analytic-btn btn btn-info" data-toggle="modal"
-                                        data-target="#exampleModal">Phrase
-                                    analytics
-                                </button>
                                 <button onClick={this.handleSubmit} className="btn btn-primary">Translate</button>
-                                {modalForPhraseAnalytics}
                             </div>
 
                             <div className="col-md-2 fix-top">
@@ -199,7 +170,7 @@ class Home extends Component {
                             <div className="panel panel-primary">
                                 <div className="panel-heading">
                                     <h3 id="info" className="panel-title">
-                                        <a href="#"><i onClick={this.handleDifinition} id="console-log" className="glyphicon glyphicon-globe"></i></a>
+                                        <a><i onClick={this.handleDifinition} id="console-log" className="glyphicon glyphicon-globe"></i></a>
                                         &nbsp;Definition :
                                             <span id="text" className="property line"> <span
                                                 className="value"></span></span>

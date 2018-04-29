@@ -34,7 +34,7 @@ class Sidebar extends React.Component {
                             <Link to="/translator"><i className="fa fa-link"></i> <span>Translator</span></Link>
                         </li>
                         <li >
-                            <Link to="/game"><i className="fa fa-link"></i> <span>Game</span></Link>
+                            <a href="/game"><i className="fa fa-link"></i> <span>Game</span></a>
                         </li>
                         <li>
                             <Link to="/phraseAnalytics"><i className="fa fa-link"></i> <span>Phrase sentiment analytics</span></Link>
