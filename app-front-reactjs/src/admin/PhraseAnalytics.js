@@ -10,6 +10,9 @@ class PhraseAnalytics extends React.Component {
         super(props);
         this.state = {
             phrase : '',
+            phraseRate: '',
+            phraseNature: '',
+            analyticsResults: '',
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -41,7 +44,40 @@ class PhraseAnalytics extends React.Component {
                 },
             })
             .then(res => {
-            console.log(res);
+            console.log(res.data);
+            const phrase  = res.data;
+                const phraseNature = phrase.substring(0, phrase.search(','));
+                let limit = phrase.search(',');
+                limit = limit + 2;
+                const phraseRate = phrase.substring(limit, phrase.lenght);
+                let labelT = "label label-info";
+                if (phraseNature == 'negative')
+                    labelT = "label label-danger";
+                else  if (phraseNature == 'negative')
+                    labelT = "label label-success";
+
+                    const analyticsResults = <div className="container">
+                    <div className="row">
+                        <h2>Phrase analytics results :</h2>
+                    </div>
+                    <div className="row">
+                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <div className="offer offer-success">
+                                <div className="shape">
+                                    <div className="shape-text">
+                                        <span className="glyphicon glyphicon glyphicon-eye-open"></span>
+                                    </div>
+                                </div>
+                                <div className="offer-content">
+                                    <h3 className="lead">
+                                        <b>{phraseNature}</b> : <label className={labelT}>{phraseRate}</label>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>;
+
+                this.setState({phraseNature, phraseRate, analyticsResults});
             }).catch(err => {
             console.log('Login error', err)
         });
@@ -60,16 +96,20 @@ class PhraseAnalytics extends React.Component {
             right : '183px'
         };
 
+        let style2 = {
+            width : '40'
+        };
+
         return (
             <div>
                 <Header />
                 <Sidebar />
                 <div className="co-md-10 col-md-offset-2">
-                    <h1 className="text-center">
+                    <h1 className="text-center"><b>
                         <a href="" className="typewrite" data-period="2000"
                            data-type='[ "This is an AI for sentiments analysis", "Human feelings at your fingertips"]'>
                             <span className="wrap"></span>
-                        </a>
+                        </a></b>
                     </h1>
 
                     <div className="row">
@@ -88,6 +128,7 @@ class PhraseAnalytics extends React.Component {
                     </div>
 
             </div>
+                {this.state.analyticsResults}
             </div>
         );
     }
