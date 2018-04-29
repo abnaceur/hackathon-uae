@@ -13,7 +13,7 @@ class Dashboard extends React.Component {
 
         this.handleStyle = this.handleStyle.bind(this);
     }
-    
+
     handleStyle (value) {
 
         let style = {

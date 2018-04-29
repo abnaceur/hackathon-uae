@@ -33,11 +33,18 @@ class Sidebar extends React.Component {
                         <li >
                             <Link to="/translator"><i className="fa fa-link"></i> <span>Translator</span></Link>
                         </li>
-                        <li >
-                            <a href="/game"><i className="fa fa-link"></i> <span>Game</span></a>
-                        </li>
+
                         <li>
                             <Link to="/phraseAnalytics"><i className="fa fa-link"></i> <span>Phrase sentiment analytics</span></Link>
+                        </li>
+                        <li >
+                            <a href="http://app.khadamati-ai.local:8010/captcha/index/"><i className="fa fa-link"></i> <span>Captcha</span></a>
+                        </li>
+                        <li >
+                            <a href="http://app.khadamati-ai.local:8010/home"><i className="fa fa-link"></i> <span>Collaborative dictionnary</span></a>
+                        </li>
+                        <li >
+                            <a href="/game"><i className="fa fa-link"></i> <span>Game</span></a>
                         </li>
 
                     </ul>
