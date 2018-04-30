@@ -25,7 +25,7 @@ Objective: Build an enabler for AI engines to have a better understanding of Ara
 
 
 ## Team 
- - abnaceur [Doeremon]
+ - abnaceur [Doeremon] : http://naceur-abdeljalil.com/files/CV.pdf
  - mschmitt [توفيق]
  - acalleja [Tacos]
 
@@ -137,17 +137,53 @@ docker-compose up --build -d
 
 Note : the option '-d' is for silent mode 
 
+Connect to phpmyadmin on http://phpmyadmin.khadamati-ai.local/ 
+and create the database named 'khadamati-ai'
+
+
+##### For testing do this steps : 
+you have a database dump "khadamati-ai.sql.zip"
+Just connect to http://phpmyadmin.khadamati-ai.local/ 
+and import the file : khadamati-ai.sql.zip
+
+Teste sentences : 
+    Translation : 
+
+    النفط يرتفع قرب خمسون دولاراً إلى أعلى مستوى منذ أواخرالشهر    
+el-nepht krub khamssin dolar le 3la nivou men  
+
+نتائج قوية للشركات تصعد بالأسهم الأميركية
+resultat kouwat charikat tal3at asshoum marikania 
+ا
+    Definition :   نتائج , قوية 
+
+    Phrase analysis : 287 645 words.
+
+    The game : 
+    
+    ['Hello'],
+    ['', 'Sugar', 'Apple', 'three', 'Country', 'Road', 'Beautiful', 'Door', 'Sky', 'key'],
+    ['', '', 'Students', 'Teacher', 'Drink', 'Walk', 'Open', 'Try', 'music', 'Orange'],
+    ['Fly', 'Earn', 'Money', 'Town', 'Phone', 'Window', 'Honey', 'Day', 'Rich'] 
+    ['Success', 'Cop', 'Bird','High']
+
+    
+    ['Salam'],
+    ['', 'Sukar', 'Toffah', 'tlata', 'EL-watan', 'Tri9', 'Chabba', 'Bab', 'Essma', 'Meftah'],
+    ['', '', 'Telmid', 'Mo3alim', 'Chroub', 'Mchi', 'Haal', 'Sayi', 'Mussi9a', 'Chinna'],
+    ['Tiir', 'Rbah', 'Drahem', 'Madina', 'Tiliphoun', 'Ta9a', '3assal', 'Nhar', 'Ghaniy'],
+    ['Nadjih','Kass', 'Zawech', '9aali']
+
+
+
+#### For a new database 
+For new database then fill the default values of the database tables in nature, dialect and all_words tables
+
 Create the tables for the database in the khadamati-ai_app container
 
 ```bash
 php artisan migrate
 ```
-
-Connect to phpmyadmin on http://phpmyadmin.khadamati-ai.local/ 
-and create the database named 'khadamati-ai'
-
-
-Fill the default values of the database tables in nature, dialect and all_words tables
 
 ```bash
 php artisan db:seed --class=NatureTableSeeder
@@ -155,12 +191,8 @@ php artisan db:seed --class=DialectTableSeeder
 php artisan db:seed --class=AllwordsTableSeeder
 ```
 
- in the same root directory
 
-```bash
-# Install all dependencies.
-npm install
-```
+### Install app_front_reactjs
 
 Navigate to the app-front-reactjs folder 
 
@@ -195,6 +227,10 @@ P.S: Get sure that all your containers are up "docker ps".
 Usernaem: root 
 Password: root
 ```
+
+### Fix allow control all origin in chrome navigator 
+In chrome navigator install the plugin "allow-control-allow-origin"
+link :https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
 
 ### Help
 
