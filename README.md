@@ -25,7 +25,7 @@ Objective: Build an enabler for AI engines to have a better understanding of Ara
 
 
 ## Team 
- - abnaceur [Doeremon] : http://naceur-abdeljalil.com/files/CV.pdf
+ - abnaceur [Doeremon] : http://naceur-abdeljalil.com
  - mschmitt [توفيق]
  - acalleja [Tacos]
 
@@ -146,21 +146,23 @@ you have a database dump "khadamati-ai.sql.zip"
 Just connect to http://phpmyadmin.khadamati-ai.local/ 
 and import the file : khadamati-ai.sql.zip
 
-Teste sentences : 
-    Translation : 
+Teste sentences :
 
+    Translation : 
+```bash
     النفط يرتفع قرب خمسون دولاراً إلى أعلى مستوى منذ أواخرالشهر    
 el-nepht krub khamssin dolar le 3la nivou men  
 
 نتائج قوية للشركات تصعد بالأسهم الأميركية
 resultat kouwat charikat tal3at asshoum marikania 
-ا
+```
+
     Definition :   نتائج , قوية 
 
     Phrase analysis : 287 645 words.
 
     The game : 
-    
+```bash 
     ['Hello'],
     ['', 'Sugar', 'Apple', 'three', 'Country', 'Road', 'Beautiful', 'Door', 'Sky', 'key'],
     ['', '', 'Students', 'Teacher', 'Drink', 'Walk', 'Open', 'Try', 'music', 'Orange'],
@@ -173,17 +175,19 @@ resultat kouwat charikat tal3at asshoum marikania
     ['', '', 'Telmid', 'Mo3alim', 'Chroub', 'Mchi', 'Haal', 'Sayi', 'Mussi9a', 'Chinna'],
     ['Tiir', 'Rbah', 'Drahem', 'Madina', 'Tiliphoun', 'Ta9a', '3assal', 'Nhar', 'Ghaniy'],
     ['Nadjih','Kass', 'Zawech', '9aali']
+```
 
 
 
 #### For a new database 
-For new database then fill the default values of the database tables in nature, dialect and all_words tables
 
 Create the tables for the database in the khadamati-ai_app container
 
 ```bash
 php artisan migrate
 ```
+
+Fill the default values of the database tables in nature, dialect and all_words tables
 
 ```bash
 php artisan db:seed --class=NatureTableSeeder
