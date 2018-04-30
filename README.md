@@ -151,7 +151,7 @@ Teste sentences :
     Translation : 
 ```bash
     النفط يرتفع قرب خمسون دولاراً إلى أعلى مستوى منذ أواخرالشهر    
-el-nepht krub khamssin dolar le 3la nivou men  
+el-nepht krub khamssin dolar le 3la nivou men awakhir el-chaher 
 
 نتائج قوية للشركات تصعد بالأسهم الأميركية
 resultat kouwat charikat tal3at asshoum marikania 
@@ -220,11 +220,11 @@ ln app-front-reactjs/public/bundle.js public/js/bundle.js
 ### Django app 
 
 It is the the app-front-django folder
-the link to access the app is : app.khadamati-ai.local:8010
+the link to access the app is : django.khadamati-ai.local
 
 ### Connect to the database
 
-Start this link in your browser: phpmyadmin.khadamati-ai.dev
+Start this link in your browser: phpmyadmin.khadamati-ai.local
 P.S: Get sure that all your containers are up "docker ps".
 
 ```bash
