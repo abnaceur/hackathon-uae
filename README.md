@@ -74,7 +74,7 @@ Provided solution :
 
 #### Home page
 
-![Alt text](img/Home.png)
+![Alt text](http://www.addictedtoibiza.com/wp-content/uploads/2012/12/example.png)
 
 ## Install the development environment
 
