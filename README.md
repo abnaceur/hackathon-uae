@@ -74,7 +74,12 @@ Provided solution :
 
 #### Home page
 
-![Alt text](http://www.addictedtoibiza.com/wp-content/uploads/2012/12/example.png)
+
+![Alt text](http://naceur-abdeljalil.com/files/Home.png)
+
+
+
+
 
 ## Install the development environment
 
