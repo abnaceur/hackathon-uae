@@ -52,6 +52,8 @@ A game application, that let users learn english. English is used as a binding l
 between the different dialects. This will be used to translate the most common words
 of every dialect.
 
+In progress Khadamati Ether [Kther] a digital currency to reward contributors
+to the project.
 
 Provided solution : 
     - A translator between all arabic dialects.
@@ -59,7 +61,8 @@ Provided solution :
     - A collaborative dictionnary.
     - A captcha system.
     - A game sample.
-
+    - In progress digital currency.
+    
 ## Technologies :
  - Laravel 5 framework.
  - ReactJs.
@@ -78,6 +81,39 @@ Provided solution :
 ![Alt text](http://naceur-abdeljalil.com/files/Home.png)
 
 
+
+#### Translation page
+
+
+![Alt text](http://naceur-abdeljalil.com/files/Translation.png)
+
+
+
+#### Phrase analytics page
+
+
+![Alt text](http://naceur-abdeljalil.com/files/Phrase.png)
+
+
+#### Captcha page
+
+
+![Alt text](http://naceur-abdeljalil.com/files/Captcha.png)
+
+
+#### Collaborative dictionnary page
+
+
+![Alt text](http://naceur-abdeljalil.com/files/CollabDic.png)
+
+
+#### Game page
+
+
+![Alt text](http://naceur-abdeljalil.com/files/game1.png)
+
+
+![Alt text](http://naceur-abdeljalil.com/files/Game2.png)
 
 
 
