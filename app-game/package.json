@@ -49,7 +49,7 @@
     "karma-phantomjs-launcher": "^0.2.0",
     "karma-spec-reporter": "0.0.20",
     "karma-webpack": "^1.7.0",
-    "lodash": "^4.5.1",
+    "lodash": "^4.17.19",
     "node-sass": "^4.13.1",
     "nodemon": "^1.9.0",
     "opn-cli": "^3.1.0",
